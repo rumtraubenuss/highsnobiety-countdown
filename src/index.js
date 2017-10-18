@@ -3,7 +3,7 @@ import { number, string, oneOfType } from 'prop-types';
 
 import Display from './display';
 
-const getTimestamp = () => parseInt((new Date()).getTime());
+const getTimestamp = () => (new Date()).getTime();
 
 class Countdown extends PureComponent {
   static propTypes = {
